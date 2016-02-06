@@ -16,12 +16,10 @@ class CreateChurchTable extends Migration
         Schema::create("churches", function (Blueprint $table) {
             $table->bigIncrements("id");
             $table->string("name", 300);
-            $table->integer("zone_id")->unsigned();
-            $table->foreign("zone_id")->references("zones")
-                ->on("id")
-                ->onDelete("cascade")
-                ->onUpdate("cascade");
+            $table->bigInteger("zone_id")->unsigned();
         });
+
+
     }
 
     /**
@@ -31,10 +29,6 @@ class CreateChurchTable extends Migration
      */
     public function down()
     {
-        Schema::table("churches", function (Blueprint $table) {
-            $table->dropForeign("churches_zone_id_foreign");
-        });
-
         Schema::drop("churches");
     }
 }

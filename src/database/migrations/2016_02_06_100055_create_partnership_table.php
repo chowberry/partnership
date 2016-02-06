@@ -22,13 +22,11 @@ class CreatePartnershipTable extends Migration
             $table->enum("gender", array("Male", "Female"));
             $table->date("birthday")->nullable();
             $table->enum("marital_status", array("Married", "Divorced", "Separated", "Single", "Other"))->nullable();
-            $table->integer("church_id")->unsigned();
+            $table->bigInteger("church_id")->unsigned();
             $table->timestamps();
             $table->softDeletes();
-            $table->foreign("church_id")->references("churches")
-                ->on("id")
-                ->onDelete("cascade");
         });
+
     }
 
     /**
@@ -38,10 +36,6 @@ class CreatePartnershipTable extends Migration
      */
     public function down()
     {
-        Schema::table("partnerships", function (Blueprint $table) {
-            $table->dropForeign("partnerships_church_id_foreign");
-        });
-
         Schema::drop("partnerships");
     }
 }

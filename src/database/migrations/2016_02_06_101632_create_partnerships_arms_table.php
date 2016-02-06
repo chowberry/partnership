@@ -14,18 +14,11 @@ class CreatePartnershipsArmsTable extends Migration
     public function up()
     {
         Schema::create("partnerships_arms", function (Blueprint $table) {
-            $table->integer("partnership_id")->unsigned();
-            $table->integer("arms_id")->unsigned();
+            $table->bigInteger("partnership_id")->unsigned();
+            $table->bigInteger("arms_id")->unsigned();
+            $table->primary(array("arms_id", "partnership_id"));
         });
 
-        Schema::table("partnerships_arms", function (Blueprint $table) {
-            $table->foreign("partnership_id")->references("partnerships")
-                ->on("id")->onDelete("cascade");
-            $table->foreign("arms_id")->references("arms")
-                ->on("id")->onDelete("cascade");
-            $table->unique(array("partnership_id", "arms_id"));
-            $table->index(["partnership_id", "arms_id"]);
-        });
     }
 
     /**
@@ -35,6 +28,6 @@ class CreatePartnershipsArmsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop("partnerships_arms");
     }
 }
