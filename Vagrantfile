@@ -128,9 +128,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   #configure managed host
-  #config.hostmanager.enabled = true
-  #config.hostmanager.manage_host = true
-  #config.hostmanager.ignore_private_ip = false
-  #config.hostmanager.include_offline = true
-  #config.vm.hostname = 'compare-me.localhost.com'
+  config.hostmanager.enabled = true
+  config.hostmanager.manage_host = true
+  config.hostmanager.ignore_private_ip = false
+  config.hostmanager.include_offline = true
+  config.vm.hostname = 'partnership.localhost.com'
 end
