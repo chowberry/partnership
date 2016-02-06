@@ -1,0 +1,10 @@
+### Laravel template
+/bootstrap/compiled.php
+###.env.*.php
+###.env.php
+###.env
+/src/vendor/
+/.idea/
+/.vagrant/
+
+# Created by .ignore support plugin (hsz.mobi)
