@@ -1,10 +1,13 @@
 ### Laravel template
 /bootstrap/compiled.php
-###.env.*.php
-###.env.php
-###.env
+.env.*.php
+.env.php
+.env
 /src/vendor/
 /.idea/
 /.vagrant/
+sami.phar
+config-sami.php
+/cache/
 
 # Created by .ignore support plugin (hsz.mobi)
