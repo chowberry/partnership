@@ -15,15 +15,15 @@ use Illuminate\Database\Eloquent\Model;
  * Class Partnership
  *
  * @package CE\Entities
- * @property int $id - Primary Key
- * @property string $title - Title of person
- * @property string $surname - Surname of person
- * @property string $other_name - Other names of person
- * @property string $pcf - Pastoral Care fellowship.
- * @property string $gender - Gender of the person.
- * @property date $birthday - Birthday of the partner.
- * @property string $marital_status - Marital status.
- * @property date $wedding_anniv - Wedding anniversary.
+ * @property int $id    Primary Key
+ * @property string $title  Title of person
+ * @property string $surname    Surname of person
+ * @property string $other_name Other names of person
+ * @property string $pcf    Pastoral Care fellowship.
+ * @property string $gender Gender of the person.
+ * @property date $birthday Birthday of the partner.
+ * @property string $marital_status Marital status.
+ * @property date $wedding_anniv   Wedding anniversary.
  */
 class Partnership extends Model
 {

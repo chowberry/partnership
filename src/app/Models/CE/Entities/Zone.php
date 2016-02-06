@@ -15,8 +15,8 @@ use Illuminate\Database\Eloquent\Model;
  * Class Zones
  *
  * @package CE\Entities
- * @property int $id - Id of the zones.
- * @propery string $name - Name of the zones.
+ * @property int $id   Id of the zones.
+ * @property string $name   Name of the zones.
  */
 class Zone extends Model
 {

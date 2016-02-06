@@ -15,11 +15,11 @@ use Illuminate\Database\Eloquent\Model;
  * Class Contact
  *
  * @package CE\Entities
- * @property int $partnership_id - Id of partnership
- * @property string $email - Email
- * @property string $alt_email - Alternate email address
- * @property string $phone - Phone number
- * @property string $alt_phone - alternate phone number.
+ * @property int $partnership_id    Id of partnership
+ * @property string $email  Email
+ * @property string $alt_email  Alternate email address
+ * @property string $phone  Phone number
+ * @property string $alt_phone  Alternate phone number.
  */
 class Contact extends Model
 {

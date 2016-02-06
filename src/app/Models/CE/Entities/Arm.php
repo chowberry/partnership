@@ -15,8 +15,8 @@ use Illuminate\Database\Eloquent\Model;
  * Class Arm
  *
  * @package CE\Entities
- * @property int $id - Primary key
- * @property string $name - Name of zone.
+ * @property int $id -  Primary key
+ * @property string $name -   Name of zone.
  */
 class Arm extends Model
 {
