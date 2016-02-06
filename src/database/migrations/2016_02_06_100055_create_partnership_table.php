@@ -22,6 +22,7 @@ class CreatePartnershipTable extends Migration
             $table->enum("gender", array("Male", "Female"));
             $table->date("birthday")->nullable();
             $table->enum("marital_status", array("Married", "Divorced", "Separated", "Single", "Other"))->nullable();
+            $table->date("wedding_anniv")->nullable();
             $table->bigInteger("church_id")->unsigned();
             $table->timestamps();
             $table->softDeletes();

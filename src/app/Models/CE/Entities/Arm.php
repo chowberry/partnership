@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: ndy40
  * Date: 06/02/16
- * Time: 19:28
+ * Time: 20:01
  */
 
 namespace CE\Entities;
@@ -12,11 +12,13 @@ namespace CE\Entities;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Zones
+ * Class Arm
  *
  * @package CE\Entities
+ * @property int $id - Primary key
+ * @property string $name - Name of zone.
  */
-class Zones extends Model
+class Arm extends Model
 {
 
 }
